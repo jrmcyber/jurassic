@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Jurassic Park Trilogy Archive - A nostalgic journey through the first three Jurassic Park films. Explore dinosaurs, characters, and iconic moments.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Jurassic Park, Jurassic Park 2, Jurassic Park 3, dinosaurs, T-Rex, Velociraptor, Spinosaurus">
+  <title>Jurassic Park Archive | Home</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- For modern browsers -->
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+<link rel="icon" type="image/png" sizes="64x64" href="images/logo.png">
+<link rel="shortcut icon" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="homepage">
+
+
+<header>
+  <div class="banner">
+    <img src="images/new-banner.jpg" alt="Jurassic Park Banner" class="banner-desktop">
+
+    <img src="images/mobile-banner.jpg" alt="Jurassic Park Banner" class="banner-mobile">
+    
+     <div class="hamburger-icon" onclick="toggleHamburger()">
+    <i class="fas fa-bars"></i>
+  </div>
+    
+    <nav class="banner-nav">
+      <ul>
+
+        <li class="dropdown">
+          <input type="checkbox" id="films-dropdown" class="dropdown-toggle">
+          <label for="films-dropdown" class="dropbtn">Films</label>
+          <div class="dropdown-content">
+            <a href="jp1.html">Jurassic Park</a>
+            <a href="jp2.html">The Lost World</a>
+            <a href="jp3.html">Jurassic Park III</a>
+          </div>
+        </li>
+        
+        <!-- Apex Predators Dropdown -->
+        <li class="dropdown">
+          <input type="checkbox" id="apex-dropdown" class="dropdown-toggle">
+          <label for="apex-dropdown" class="dropbtn">Apex Predators</label>
+          <div class="dropdown-content">
+            <a href="trex.html">Tyrannosaurus Rex</a>
+            <a href="raptors.html">Velociraptors</a>
+            <a href="spino.html">Spinosaurus</a>
+          </div>
+        </li>
+        
+        <!-- Vault Dropdown -->
+        <li class="dropdown">
+          <input type="checkbox" id="vault-dropdown" class="dropdown-toggle">
+          <label for="vault-dropdown" class="dropbtn">The Vault</label>
+          <div class="dropdown-content">
+            <a href="encyclopedia.html">Dino Encyclopedia</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </li>
+        
+        <!-- Contact Dropdown -->
+        <li class="dropdown">
+          <input type="checkbox" id="contact-dropdown" class="dropdown-toggle">
+          <label for="contact-dropdown" class="dropbtn">Contact</label>
+          <div class="dropdown-content">
+            <a href="contact.html">Contact Form</a>
+            <a href="#contact">Social Media</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    
+    
+    <div class="banner-overlay">
+      <!-- Logo + Title-->
+      <div class="logo-container">
+        <h1>Jurassic Park Archive</h1>
+      </div>
+      
+      <!-- Amber Logo -->
+      <a href="index.html" class="amber-logo-link" title="Go to Home">
+        <img src="images/amberlogo.png" alt="Amber Logo - Home" class="amberlogo">
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero-video">
+    <video class="hero-video-bg" autoplay muted loop playsinline>
+      <source src="video/jurassic-gate.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1 id="typewriter-title">Welcome to Jurassic Park</h1>
+      <p>An island tour you'll never forget</p>
+      <a href="films.html" class="btn btn-large">Start Your Journey <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <section class="soundtracks">
+  
+  <div class="soundtrack-grid">
+    
+    <!-- JP1 Soundtrack -->
+    <div class="soundtrack-card">
+      
+      <div class="soundtrack-info">
+        <h3>Jurassic Park Theme</h3>
+        <p class="composer">John Williams • 1993</p>
+        <audio controls class="styled-audio">
+          <source src="audio/jp1-theme.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- JP2 Soundtrack -->
+    <div class="soundtrack-card">
+      
+      <div class="soundtrack-info">
+        <h3>The Lost World Theme</h3>
+        <p class="composer">John Williams • 1997</p>
+        <audio controls class="styled-audio">
+          <source src="audio/jp2-theme.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+
+    <!-- JP3 Soundtrack -->
+    <div class="soundtrack-card">
+      
+      <div class="soundtrack-info">
+        <h3>Jurassic Park III Theme</h3>
+        <p class="composer">Don Davis • 2001</p>
+        <audio controls class="styled-audio">
+          <source src="audio/jp3-theme.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Isla Nublar Map + Film Synopsis  -->
+<div class="map-synopsis-section">
+  
+  <!-- MAP  -->
+  <aside class="isla-nublar-aside">
+    <h3><i class="fas fa-map"></i> Isla Nublar Interactive Map</h3>
+    <p class="map-subtitle">Click any highlighted region to explore dinosaur territories</p>
+    
+    <div class="map-wrapper">
+      <svg viewBox="0 0 1074 1276" class="isla-nublar-svg">
+  <image href="images/nublarmapsvg.jpg" width="1074" height="1276" preserveAspectRatio="none"/>
+  
+  <!-- Raptor Paddock -->
+  <a href="raptors.html">
+    <polygon class="map-region region-trex" points="189,381,192,373,227,366,242,371,257,379,261,395,267,405,279,408,296,406,294,398,291,388,286,385,281,380,276,383,275,379,278,374,280,373,285,374,292,378,296,379,298,374,298,372,296,368,294,365,294,362,297,360,299,362,301,367,302,370,302,375,303,379,305,379,311,379,314,382,314,384,308,384,303,382,303,388,303,393,303,396,306,402,310,406,314,407,320,402,327,394,331,393,335,390,342,384,345,378,346,374,346,370,345,366,340,368,335,369,329,364,330,355,331,348,331,344,329,343,323,343,321,344,321,335,322,330,320,326,321,322,326,317,334,314,339,313,342,311,346,308,351,308,357,313,362,317,366,323,368,326,368,332,369,339,370,348,370,354,371,361,377,382,380,397,393,413,400,405,417,398,429,393,434,389,431,382,429,373,429,361,431,353,436,346,443,341,445,338,452,341,459,341,466,342,474,346,478,355,464,357,468,367,476,379,477,384,473,388,464,382,455,377,458,389,459,398,455,410,485,405,506,405,515,401,518,386,524,375,533,368,553,370,555,378,562,384,565,397,562,398,552,393,557,405,557,411,549,410,541,403,536,402,535,414,527,423,524,435,520,438,531,439,549,442,562,440,569,439,572,442,568,443,570,446,576,450,565,446,557,445,555,448,559,454,558,456,554,449,526,446,514,443,509,445,510,450,517,453,521,455,524,461,525,469,524,473,520,460,516,467,513,472,511,466,510,470,508,461,501,454,495,451,489,448,487,457,475,470,464,482,469,485,479,484,491,484,509,489,514,495,513,497,504,493,491,489,492,495,495,503,499,511,496,513,492,507,488,510,491,517,483,507,471,499,457,494,440,485,426,491,407,494,416,500,424,502,428,519,430,531,424,533,421,528,417,514,412,508,400,500,397,500,398,509,401,515,410,516,413,519,407,519,404,521,403,525,402,525,403,528,406,532,410,536,408,537,403,537,403,537,399,538,389,533,381,527,387,537,377,536,376,539,373,542,362,541,363,544,354,542,349,542,347,542,339,536,336,537,330,538,328,526,331,516,340,501,342,496,337,487,334,473,327,468,327,476,318,476,317,485,318,494,318,502,317,507,311,499,310,496,307,499,307,502,303,504,301,497,301,491,297,481,296,479,291,479,288,485,287,498,289,503,289,504,280,505,278,495,276,487,277,478,277,477,286,474,295,472,295,468,290,466,280,462,272,453,259,452,249,455,244,455,243,462,236,467,231,469,231,465,237,458,240,455,241,453,241,450,233,449,229,443,230,436,226,435,225,433,221,433,218,432,216,437,214,436,207,432,214,426,223,427,226,424,222,423,217,423,209,423,212,421,217,420,226,421,231,427,236,432,237,438,239,443,245,446,252,446,257,444,261,443,266,441,255,432,253,424,245,418,240,412,234,406,233,396,220,401,208,401,196,401,193,400,195,396,202,395,210,394,221,393,227,389,230,388,235,386,227,383,217,382,205,382,198,381,189,381,190,380" 
+      fill="rgba(245,166,35,0)" stroke="#f5a623" stroke-width="0"/>
+    <title>Raptors Territory</title>
+  </a>
+  
+  <!-- T-Rex Territory -->
+  <a href="trex.html">
+    <polygon class="map-region region-raptor" points="731,387,726,365,728,342,733,316,746,299,771,286,786,285,802,291,816,295,832,301,854,319,859,341,858,352,850,350,846,357,843,363,848,369,845,377,836,381,822,380,808,377,820,390,840,394,857,407,869,426,873,437,902,454,939,467,979,479,1006,497,1013,509,1015,522,1009,531,1004,538,1004,526,1003,518,1002,512,996,508,981,502,960,502,940,504,919,504,900,501,876,495,886,517,889,532,896,540,902,557,910,580,924,593,932,601,921,602,908,593,903,589,906,600,907,605,900,605,894,600,888,594,883,601,872,603,868,601,869,594,875,593,879,586,881,579,884,572,878,567,881,557,880,543,857,520,847,509,841,497,837,494,810,501,803,496,792,487,786,491,790,500,798,518,801,524,817,542,814,559,812,567,807,560,807,575,803,585,792,590,780,593,770,589,773,582,766,590,759,589,759,586,750,591,761,578,778,572,786,562,791,550,792,544,785,536,766,522,755,503,761,474,748,453,738,439,734,441,734,450,737,455,739,461,739,463,733,455,730,461,731,470,727,461,730,449,726,438,727,430,725,412,730,388" 
+      fill="rgba(245,166,35,0)" stroke="#f5a623" stroke-width="0"/>
+    <title>T-Rex Territory</title>
+  </a>
+  
+  <!-- Visitor Center -->
+  <a href="encyclopedia.html">
+    <polygon class="map-region region-spino" points="283,684,307,656,322,630,344,607,346,598,350,597,352,606,374,622,386,615,389,611,424,584,425,578,434,566,441,578,441,581,484,608,500,594,501,591,504,586,508,590,509,593,533,609,534,624,540,628,568,629,605,685,544,698,538,696,480,704,482,706,471,706,460,703,446,706,416,704,398,709,355,707,288,695" 
+      fill="rgba(245,166,35,0)" stroke="#f5a623" stroke-width="0"/>
+    <title>Visitor Center</title>
+  </a>
+  
+  <!-- Spinosaurus Territory -->
+  <a href="spino.html">
+    <polygon class="map-region region-jp" points="697,842,720,853,724,865,720,890,725,903,724,921,719,930,716,946,708,946,701,941,699,967,710,999,696,1027,688,1029,684,1052,676,1072,687,1099,696,1108,712,1115,715,1117,707,1124,674,1124,667,1110,662,1116,653,1079,656,1071,655,1052,653,1041,646,1048,631,1044,626,1029,623,1021,620,1015,611,1018,603,1010,597,1029,578,1064,569,1091,580,1105,599,1110,605,1119,590,1117,589,1121,575,1117,559,1120,549,1119,549,1111,557,1104,552,1090,557,1055,562,1034,571,1027,567,998,563,994,551,994,542,997,537,1004,510,1000,476,988,477,985,495,985,526,978,544,955,593,922,606,890,613,866,625,846,635,835,648,834,658,851,662,866,670,873,682,859,688,850" 
+      fill="rgba(245,166,35,0)" stroke="#f5a623" stroke-width="0"/>
+    <title>Spinosaurus Territory</title>
+  </a>
+</svg>
+    </div>
+    
+    <div class="map-legend">
+      <h3><i class="fas fa-compass"></i> Map Legend</h3>
+      <ul>
+        <li><span class="legend-color trex"></span> Raptor Paddock → <a href="raptors.html">Raptors Profile</a></li>
+        <li><span class="legend-color raptor"></span> T-rex Territory → <a href="trex.html">T-rex Profile</a></li>
+        <li><span class="legend-color spino"></span> Visitors Center → <a href="encyclopedia.html">Visitor Center</a></li>
+        <li><span class="legend-color jp"></span> Spinosaurus → <a href="spino.html">Spinosaurus</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- FILM SYNOPSIS-->
+  <article class="film-synopsis-article">
+    <h2><i class="fas fa-film"></i> Featured Film: Jurassic Park (1993)</h2>
+    <p>
+      Billionaire John Hammond fulfils his dream of cloning dinosaurs from prehistoric DNA and builds a theme park on the remote island of Isla Nublar. Before the park opens, he invites a group of experts — palaeontologist Dr. Alan Grant, palaeobotanist Dr. Ellie Sattler, and chaos theorist Dr. Ian Malcolm — to verify its safety.
+    </p>
+    <p>
+      When a corrupt employee sabotages the island's security systems, the dinosaurs break free and the group must fight for survival against creatures that have not walked the Earth for 65 million years.
+    </p>
+    <a href="jp1.html" class="btn-small">Explore full film page <i class="fas fa-arrow-right"></i></a>
+    
+    <div class="quick-facts-mini">
+      <h4><i class="fas fa-clipboard-list"></i> Quick Facts</h4>
+      <ul>
+        <li><span>Director:</span> Steven Spielberg</li>
+        <li><span>Released:</span> 1993</li>
+        <li><span>Rating:</span> PG-13</li>
+        <li><span>Runtime:</span> 127 min</li>
+        <li><span>Studio:</span> Universal Pictures</li>
+      </ul>
+    </div>
+  </article>
+
+</div>
+
+<aside class="fun-fact fact-generator">
+  <div class="fact-card">
+    <img src="images/fact-generator3.jpg" alt="Background" class="fact-bg-img">
+    <div class="fact-content">
+      <div class="fact-header">
+        <h3>Dino Fact Generator</h3>
+      </div>
+      <p id="factText">Click the button to discover an amazing Jurassic Park fact!</p>
+      <button class="btn" onclick="generateFact()"><i class="fas fa-dice-d6"></i> Generate Fact</button>
+    </div>
+  </div>
+</aside>
+</main>
+
+
+<footer id="contact">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3> Jurassic Park Trilogy Archive</h3>
+      <p>Preserving the legacy of the original Jurassic Park trilogy. For fans, by fans.</p>
+      <p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="trex.html">Tyrannosaurus Rex</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Connect</h3>
+      <i class="fas fa-globe"></i> <a href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/" target="_blank">UTM Website</a>
+      
+      <p><i class="fas fa-envelope"></i> <a href="mailto:jurassicparkarchive@gmail.com">jurassicparkarchive@gmail.com</a></p>
+      <div class="social-icons">
+        <a href="https://x.com/jurassic_Park_a" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://m.facebook.com/profile.php?id=61591507573275" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/jurassic_park_archive/" target="_blank"><i class="fab fa-instagram"></i></a>
+      
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Jurassic Park Trilogy Archive | <a href="#top">Back to top <i class="fas fa-arrow-up"></i></a></p>
+    <p>Visit <a href="https://www.jurassicworld.com" target="_blank">Official Jurassic World <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact Jurassic Park Archive - Send us your questions and feedback">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Jurassic Park Archive</title>
+  
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/logo.png">
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
+  
+  <link rel="stylesheet" href="css/site.css">
+  
+  <style>
+    
+    .contact-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px;
+      background: linear-gradient(135deg, #1e2a24, #162017);
+      border-radius: 20px;
+      border: 2px solid #f5a623;
+      box-shadow: 0 0 30px rgba(245, 166, 35, 0.2);
+    }
+    
+    .contact-container h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    .contact-container > p {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ab974d;
+    }
+    
+    
+    fieldset {
+      border: 2px solid rgba(245, 166, 35, 0.3);
+      border-radius: 15px;
+      padding: 20px 25px 25px 25px;
+      margin-bottom: 25px;
+    }
+    
+    legend {
+      font-size: 1.5rem;
+      color: #f5a623;
+      padding: 0 15px;
+      
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #f5a623;
+    }
+    
+    .form-group label i {
+      margin-right: 8px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border-radius: 10px;
+      border: 1px solid #f5a623;
+      background-color: #0d1f14;
+      color: #e8dcc5;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #d48c2c;
+      box-shadow: 0 0 10px rgba(245, 166, 35, 0.5);
+    }
+    
+    .form-group input.error,
+    .form-group textarea.error {
+      border-color: #ff4444;
+      background-color: rgba(255, 68, 68, 0.1);
+    }
+    
+    .error-message {
+      color: #ff4444;
+      font-size: 0.8rem;
+      margin-top: 5px;
+      display: none;
+    }
+    
+    .error-message.show {
+      display: block;
+    }
+    
+    .form-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .form-row .form-group {
+      flex: 1;
+      min-width: 200px;
+    }
+    
+    .submit-btn {
+      background-color: #f5a623;
+      color: #0d1f14;
+      border: none;
+      padding: 14px 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+    
+    .submit-btn:hover {
+      background-color: #d48c2c;
+      transform: scale(1.02);
+    }
+    
+    .success-message {
+      background-color: rgba(76, 175, 80, 0.2);
+      border: 1px solid #4CAF50;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      margin-top: 20px;
+      display: none;
+      color: #4CAF50;
+    }
+    
+    .success-message.show {
+      display: block;
+    }
+    
+    .google-map {
+      margin-top: 40px;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 2px solid #f5a623;
+    }
+    
+    .google-map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    
+    .map-caption {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #ab974d;
+    }
+  
+    
+    @media (max-width: 768px) {
+      .contact-container {
+        margin: 20px;
+        padding: 25px;
+      }
+      
+      .form-row {
+        flex-direction: column;
+        gap: 0;
+      }
+      
+      fieldset {
+        padding: 15px 15px 20px 15px;
+      }
+      
+      legend {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="banner">
+    <img src="images/new-banner.jpg" alt="Jurassic Park Banner" class="banner-desktop">
+    <img src="images/mobile-banner.jpg" alt="Jurassic Park Banner" class="banner-mobile">
+
+    <div class="hamburger-icon" onclick="toggleHamburger()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="banner-nav">
+      <ul>
+        <li class="dropdown">
+          <input type="checkbox" id="films-dropdown" class="dropdown-toggle">
+          <label for="films-dropdown" class="dropbtn">Films</label>
+          <div class="dropdown-content">
+            <a href="jp1.html">Jurassic Park</a>
+            <a href="jp2.html">The Lost World</a>
+            <a href="jp3.html">Jurassic Park III</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <input type="checkbox" id="apex-dropdown" class="dropdown-toggle">
+          <label for="apex-dropdown" class="dropbtn">Apex Predators</label>
+          <div class="dropdown-content">
+            <a href="trex.html">Tyrannosaurus Rex</a>
+            <a href="raptors.html">Velociraptors</a>
+            <a href="spino.html">Spinosaurus</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <input type="checkbox" id="vault-dropdown" class="dropdown-toggle">
+          <label for="vault-dropdown" class="dropbtn">The Vault</label>
+          <div class="dropdown-content">
+            <a href="encyclopedia.html">Dino Encyclopedia</a>
+            <a href="fan.html">Fan Theories</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <input type="checkbox" id="contact-dropdown" class="dropdown-toggle">
+          <label for="contact-dropdown" class="dropbtn">Contact</label>
+          <div class="dropdown-content">
+            <a href="contact.html">Contact Form</a>
+            <a href="#contact">Social Media</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="banner-overlay">
+      <div class="logo-container">
+        <h1>Jurassic Park Archive</h1>
+      </div>
+      <a href="index.html" class="amber-logo-link" title="Go to Home">
+        <img src="images/amberlogo.png" alt="Amber Logo - Home" class="amberlogo">
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="contact-container">
+    <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+    <p>Have questions about Jurassic Park? Send us a message!</p>
+    
+    <form id="contactForm" method="POST" action="#">
+      
+      
+      <fieldset>
+        <legend><i class="fas fa-user"></i> Personal Information</legend>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Name *</label>
+            <input type="text" id="name" name="name" 
+                   placeholder="John Hammond" 
+                   tabindex="1" 
+                   accesskey="N"
+                   pattern="[A-Za-z ]{2,50}" 
+                   title="Name must be 2-50 letters only"
+                   required>
+            <div class="error-message" id="nameError">Please enter your name (2-50 letters)</div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="fan@jurassicpark.com" 
+                   tabindex="2" 
+                   accesskey="E"
+                   required>
+            <div class="error-message" id="emailError">Please enter a valid email address</div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone"><i class="fas fa-phone"></i> Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" 
+                 placeholder="555-123-4567" 
+                 tabindex="3" 
+                 accesskey="P"
+                 pattern="[0-9\-+ ]{7,15}" 
+                 title="Enter a valid phone number">
+        </div>
+      </fieldset>
+      
+      <!-- ===== FIELDSET 2: Your Messag ===== -->
+      <fieldset>
+        <legend><i class="fas fa-comment"></i> Your Message</legend>
+        
+        <div class="form-group">
+          <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+          <!-- ===== DATALIST ===== -->
+          <input type="text" id="subject" name="subject" 
+                 list="subject-list" 
+                 placeholder="Select or type a subject"
+                 tabindex="4" 
+                 accesskey="S">
+          <datalist id="subject-list">
+            <option value="General Question">
+            <option value="Dinosaur Fact Correction">
+            <option value="Website Issue">
+            <option value="Fan Theory Submission">
+            <option value="Other">
+          </datalist>
+        </div>
+        
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment-dots"></i> Message *</label>
+          <textarea id="message" name="message" rows="5" 
+                    placeholder="Your message here..." 
+                    tabindex="5" 
+                    accesskey="M"
+                    required></textarea>
+          <div class="error-message" id="messageError">Please enter your message (at least 10 characters)</div>
+        </div>
+        
+      
+        <div class="form-group">
+          <label for="rating"><i class="fas fa-star"></i> How much do you love Jurassic Park?</label>
+          <div style="display: flex; align-items: center; gap: 15px;">
+            <span style="color: #ab974d;">1</span>
+            <input type="range" id="rating" name="rating" 
+                   min="1" max="10" value="10" 
+                   style="flex: 1;"
+                   tabindex="6" 
+                   accesskey="R">
+            <span style="color: #f5a623; font-weight: bold;" id="ratingValue">10</span>
+          </div>
+        </div>
+      </fieldset>
+      
+      <!-- SUBMIT BUTTON  -->
+      <button type="submit" class="submit-btn" tabindex="7" accesskey="S">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+      
+      <div id="successMessage" class="success-message">
+        <i class="fas fa-check-circle"></i> Thank you! Your message has been sent. (Demo - no actual email sent)
+      </div>
+    </form>
+    
+    <!--bGOOGLE MAP -->
+    <div class="google-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d570942.5262569932!2d-85.88348268278515!3d10.849686208579732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa3992f6ca8c64d%3A0x3c7b4a2c1a5e6b8f!2sIsla%20Nublar!5e1!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map of Isla Nublar - Jurassic Park">
+      </iframe>
+    </div>
+    <div class="map-caption">
+      <i class="fas fa-map-marker-alt"></i> Isla Nublar - Home of Jurassic Park
+    </div>
+  </div>
+</main>
+
+
+<footer id="contact">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3><i class="fas fa-dragon"></i> Jurassic Park Trilogy Archive</h3>
+      <p>Preserving the legacy of the original Jurassic Park trilogy. For fans, by fans.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="vault.html">The Vault</a></li>
+        <li><a href="fan.html">Fan Theories</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="encyclopedia.html">Encyclopedia</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Connect</h3>
+      <a href="https://utm.ac.mu/" target="_blank">UTM Website</a>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:fan@jurassicparkarchive.com">fan@jurassicparkarchive.com</a></p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Jurassic Park Trilogy Archive | <a href="#top">Back to top <i class="fas fa-arrow-up"></i></a></p>
+    <p>Visit <a href="https://www.jurassicworld.com" target="_blank">Official Jurassic World <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+<script>
+
+//  XSS PROTECTION 
+function sanitizeInput(input) {
+  const div = document.createElement('div');
+  div.textContent = input;
+  return div.innerHTML;
+}
+
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+function validateName(name) {
+  const re = /^[A-Za-z ]{2,50}$/;
+  return re.test(name);
+}
+
+// HTML Injection Protection 
+function containsHTML(input) {
+  return /[<>]/.test(input);
+}
+
+function showError(fieldId, errorId, message) {
+  const field = document.getElementById(fieldId);
+  const error = document.getElementById(errorId);
+  if (field) field.classList.add('error');
+  if (error) {
+    error.textContent = message;
+    error.style.display = 'block';
+  }
+}
+
+function clearError(fieldId, errorId) {
+  const field = document.getElementById(fieldId);
+  const error = document.getElementById(errorId);
+  if (field) field.classList.remove('error');
+  if (error) error.style.display = 'none';
+}
+
+function scrollToFirstError() {
+  const firstError = document.querySelector('.error-message[style*="block"]');
+  if (firstError) {
+    firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const ratingSlider = document.getElementById('rating');
+  if (ratingSlider) {
+    ratingSlider.addEventListener('input', function () {
+      document.getElementById('ratingValue').textContent = this.value;
+    });
+  }
+
+  const form = document.getElementById('contactForm');
+  if (form) {
+
+    form.setAttribute('novalidate', 'true');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const rawName = document.getElementById('name').value.trim();
+      const rawEmail = document.getElementById('email').value.trim();
+      const rawMessage = document.getElementById('message').value.trim();
+
+      let isValid = true;
+
+      // Validate Name
+      if (rawName === '') {
+        showError('name', 'nameError', 'Please enter your name');
+        isValid = false;
+      } else if (!validateName(rawName)) {
+        showError('name', 'nameError', 'Name must be 2–50 letters only (no numbers or symbols)');
+        isValid = false;
+      } else {
+        clearError('name', 'nameError');
+      }
+
+      // Validate Email
+      if (rawEmail === '' || !validateEmail(rawEmail)) {
+        showError('email', 'emailError', 'Please enter a valid email address');
+        isValid = false;
+      } else {
+        clearError('email', 'emailError');
+      }
+
+      // Validate Message + HTML Injection Check
+      if (rawMessage === '') {
+        showError('message', 'messageError', 'Please enter your message');
+        isValid = false;
+      } else if (rawMessage.length < 10) {
+        showError('message', 'messageError', 'Message must be at least 10 characters');
+        isValid = false;
+      } else if (containsHTML(rawMessage)) {
+        // ===== HTML INJECTION PROTECTION =====
+        showError('message', 'messageError', 'Message cannot contain HTML tags (< or >)');
+        isValid = false;
+      } else {
+        clearError('message', 'messageError');
+      }
+
+      if (!isValid) {
+        scrollToFirstError();
+        return;
+      }
+
+      // XSS PROTECTION 
+      const safeName = sanitizeInput(rawName);
+      const safeEmail = sanitizeInput(rawEmail);
+      const safeMessage = sanitizeInput(rawMessage);
+      console.log('Submission:', { safeName, safeEmail, safeMessage });
+
+      const successMsg = document.getElementById('successMessage');
+      if (successMsg) {
+        successMsg.classList.add('show');
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      form.reset();
+      document.getElementById('ratingValue').textContent = '10';
+
+      setTimeout(function () {
+        if (successMsg) successMsg.classList.remove('show');
+      }, 5000);
+    });
+  }
+
+  ['name', 'email', 'message'].forEach(function(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('input', function () {
+        clearError(id, id + 'Error');
+      });
+    }
+  });
+
+});
+
+</script>
+
+
+
+</body>
+</html>

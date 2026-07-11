@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Velociraptors – the intelligent pack hunters of Jurassic Park. Stats, sounds, film appearances and terror.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Velociraptor, Raptor, Jurassic Park Raptor, Clever Girl, Pack Hunter, Apex Predator">
+  <title>Jurassic Park Archive | Raptors</title>
+
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/logo.png">
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
+
+ 
+  <link rel="stylesheet" href="css/site.css">
+
+  <style>
+   
+    .raptor-page main {
+      padding: 0;
+      max-width: 100%;
+    }
+
+    
+    .raptor-hero {
+      position: relative;
+      min-height: 110vh;
+      background: url('images/raptorhero.jpg') no-repeat center center / cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+   
+    .raptor-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      
+    }
+
+    .raptor-hero > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .raptor-hero h1 {
+      font-family: 'Tangerine', cursive;
+      margin-top: 100px;
+      font-size: 8rem;
+      color: #f5a623;
+      text-shadow: 0 0 40px rgba(245, 166, 35, 0.4), 0 4px 20px rgba(0, 0, 0, 0.9);
+      margin-bottom: 0.2rem;
+      letter-spacing: 4px;
+    }
+
+    .raptor-hero .sub {
+      font-size: 1.6rem;
+      color: #ab974d;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    
+    .raptor-hero-audio {
+      margin-top: 1.5rem;
+    }
+
+    .raptor-hero-audio audio {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      border-radius: 30px;
+      padding: 6px 18px;
+      width: 280px;
+      max-width: 80%;
+      border: 1px solid rgba(245, 166, 35, 0.2);
+    }
+
+    .raptor-hero-audio audio::-webkit-media-controls-panel {
+      background: transparent;
+    }
+
+    
+    .raptor-content {
+      background: #0a0a0a;
+      padding: 60px 30px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+  
+    .raptor-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+  
+    .raptor-card {
+      background: #1a1a1a;
+      border: 1px solid rgba(245, 166, 35, 0.15);
+      border-radius: 12px;
+      padding: 28px 24px;
+      transition: all 0.3s ease;
+    }
+
+    .raptor-card:hover {
+      border-color: #f5a623;
+      transform: translateY(-4px);
+      box-shadow: 0 0 25px rgba(245, 166, 35, 0.2);
+    }
+
+    .raptor-card h2 {
+      font-family: 'Tangerine', cursive;
+      font-size: 2.2rem;
+      color: #f5a623;
+      border-bottom: none;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .raptor-card h2 i {
+      font-size: 1.6rem;
+      opacity: 0.7;
+    }
+
+    .raptor-card p,
+    .raptor-card li {
+      color: #d0c8b8;
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    .raptor-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .raptor-card ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(245, 166, 35, 0.06);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .raptor-card ul li:last-child {
+      border-bottom: none;
+    }
+
+    .raptor-card ul li i {
+      color: #f5a623;
+      width: 22px;
+      margin-top: 3px;
+      font-size: 0.9rem;
+    }
+
+  
+    .stats-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .stats-table tr {
+      border-bottom: 1px solid rgba(245, 166, 35, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .stats-table tr:hover {
+      background: rgba(245, 166, 35, 0.08);
+      box-shadow: 0 0 15px rgba(245, 166, 35, 0.15), inset 0 0 15px rgba(245, 166, 35, 0.05);
+      transform: scale(1.01);
+    }
+
+    .stats-table td {
+      padding: 12px 8px;
+    }
+
+    .stats-table .label {
+      color: #ab974d;
+      font-weight: 600;
+    }
+
+    .stats-table .value {
+      color: #f5a623;
+      text-align: right;
+    }
+
+  
+    .film-item {
+      display: flex;
+      gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(245, 166, 35, 0.06);
+    }
+
+    .film-item:last-child {
+      border-bottom: none;
+    }
+
+    .film-year {
+      font-weight: 700;
+      color: #f5a623;
+      min-width: 48px;
+      font-size: 0.95rem;
+    }
+
+    .film-desc {
+      color: #d0c8b8;
+      font-size: 0.95rem;
+    }
+
+    
+    .raptor-accordion {
+      margin-top: 10px;
+    }
+
+    .raptor-accordion-item {
+      margin-bottom: 12px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(245, 166, 35, 0.08);
+      transition: border-color 0.3s ease;
+    }
+
+    .raptor-accordion-item:hover {
+      border-color: rgba(245, 166, 35, 0.2);
+    }
+
+    .raptor-accordion-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 22px;
+      background: #1a1a1a;
+      cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #f5a623;
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+
+    .raptor-accordion-header:hover {
+      background: #222;
+    }
+
+    .raptor-accordion-header i {
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+
+    .raptor-accordion-icon {
+      margin-left: auto;
+      transition: transform 0.3s ease;
+      font-size: 0.8rem;
+      color: #ab974d;
+    }
+
+    .raptor-accordion-toggle {
+      display: none;
+    }
+
+    .raptor-accordion-content {
+      display: none;
+      padding: 20px 22px;
+      background: #0d0d0d;
+      color: #c0b8a8;
+      line-height: 1.8;
+      border-top: 1px solid rgba(245, 166, 35, 0.06);
+    }
+
+    .raptor-accordion-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .raptor-accordion-content ul li {
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(245, 166, 35, 0.04);
+    }
+
+    .raptor-accordion-content ul li:last-child {
+      border-bottom: none;
+    }
+
+    .raptor-accordion-content ul li strong {
+      color: #f5a623;
+    }
+
+    .raptor-accordion-toggle:checked ~ .raptor-accordion-content {
+      display: block;
+    }
+
+    .raptor-accordion-toggle:checked ~ .raptor-accordion-header .raptor-accordion-icon {
+      transform: rotate(180deg);
+    }
+
+    
+    .back-button {
+      text-align: center;
+      margin: 40px 0 20px 0;
+    }
+
+  
+    @media (max-width: 992px) {
+      .raptor-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .raptor-hero {
+        min-height: 80vh;
+        padding: 30px 16px;
+      }
+
+      .raptor-hero h1 {
+        font-size: 3.8rem;
+      }
+
+      .raptor-hero .sub {
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+      }
+
+      .raptor-content {
+        padding: 40px 16px;
+      }
+
+      .raptor-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .raptor-accordion-header {
+        font-size: 0.9rem;
+        padding: 14px 16px;
+      }
+
+      .raptor-accordion-content {
+        padding: 16px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .raptor-hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .raptor-hero .sub {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+      }
+
+      .raptor-card {
+        padding: 20px 16px;
+      }
+
+      .film-item {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .stats-table {
+        font-size: 0.8rem;
+      }
+
+      .stats-table td {
+        padding: 8px 4px;
+      }
+
+      .raptor-accordion-header {
+        font-size: 0.8rem;
+        padding: 12px 14px;
+      }
+
+      .raptor-accordion-content {
+        padding: 12px 14px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="raptor-page">
+
+<header>
+  <div class="banner">
+    <img src="images/new-banner.jpg" alt="Jurassic Park Banner" class="banner-desktop">
+    <img src="images/mobile-banner.jpg" alt="Jurassic Park Banner" class="banner-mobile">
+
+    <div class="hamburger-icon" onclick="toggleHamburger()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="banner-nav">
+      <ul>
+        <li class="dropdown">
+          <input type="checkbox" id="films-dropdown" class="dropdown-toggle">
+          <label for="films-dropdown" class="dropbtn">Films</label>
+          <div class="dropdown-content">
+            <a href="jp1.html">Jurassic Park</a>
+            <a href="jp2.html">The Lost World</a>
+            <a href="jp3.html">Jurassic Park III</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="apex-dropdown" class="dropdown-toggle">
+          <label for="apex-dropdown" class="dropbtn">Apex Predators</label>
+          <div class="dropdown-content">
+            <a href="trex.html">Tyrannosaurus Rex</a>
+            <a href="raptors.html">Velociraptors</a>
+            <a href="spino.html">Spinosaurus</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="vault-dropdown" class="dropdown-toggle">
+          <label for="vault-dropdown" class="dropbtn">The Vault</label>
+          <div class="dropdown-content">
+            <a href="encyclopedia.html">Dino Encyclopedia</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="contact-dropdown" class="dropdown-toggle">
+          <label for="contact-dropdown" class="dropbtn">Contact</label>
+          <div class="dropdown-content">
+            <a href="contact.html">Contact Form</a>
+            <a href="#contact">Social Media</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="banner-overlay">
+      <div class="logo-container">
+        <h1>Jurassic Park Archive</h1>
+      </div>
+      <a href="index.html" class="amber-logo-link" title="Go to Home">
+        <img src="images/amberlogo.png" alt="Amber Logo - Home" class="amberlogo">
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+ 
+  <section class="raptor-hero">
+    <div>
+      <h1>Velociraptor</h1>
+      <p class="sub">Apex Predator</p>
+
+      
+      <div class="raptor-hero-audio">
+        <audio controls>
+          <source src="audio/raptor-sound.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="raptor-content">
+
+   
+    <div class="raptor-grid">
+
+    
+      <article class="raptor-card">
+        <h2><i class="fas fa-file-alt"></i> Field Report</h2>
+        <p>The Velociraptor is the most intelligent dinosaur in the Jurassic Park series. They are pack hunters, capable of coordinated attacks and problem-solving. Their cunning and speed make them one of the deadliest predators on Isla Nublar and Isla Sorna.</p>
+        <p>In the original film, they are shown as highly strategic — flanking their prey, testing fences, and even learning how to open doors. Robert Muldoon's final words, <em>"Clever girl,"</em> perfectly capture their terrifying intelligence.</p>
+        <p style="margin-top: 12px;">
+          <span style="display:inline-block; background:rgba(245,166,35,0.1); border:1px solid rgba(245,166,35,0.25); border-radius:20px; padding:4px 14px; font-size:0.7rem; color:#f5a623; margin-right:6px;">Pack Hunters</span>
+          <span style="display:inline-block; background:rgba(245,166,35,0.1); border:1px solid rgba(245,166,35,0.25); border-radius:20px; padding:4px 14px; font-size:0.7rem; color:#f5a623;">3 Film Appearances</span>
+        </p>
+      </article>
+
+    
+      <article class="raptor-card">
+        <h2><i class="fas fa-chart-line"></i> Vital Statistics</h2>
+        <table class="stats-table">
+          <tbody>
+            <tr><td class="label">Length</td><td class="value">15 ft (4.5 m) — film</td></tr>
+            <tr><td class="label">Height</td><td class="value">6 ft (1.8 m) — film</td></tr>
+            <tr><td class="label">Weight</td><td class="value">330 lbs (film) / 33 lbs (real)</td></tr>
+            <tr><td class="label">Bite Force</td><td class="value">200 PSI</td></tr>
+            <tr><td class="label">Top Speed</td><td class="value">40 mph</td></tr>
+            <tr><td class="label">Lifespan</td><td class="value">15–20 years</td></tr>
+            <tr><td class="label">Diet</td><td class="value">Carnivore</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      
+      <article class="raptor-card">
+        <h2><i class="fas fa-film"></i> Appearances</h2>
+        <div class="film-item">
+          <span class="film-year">1993</span>
+          <span class="film-desc"><strong>Jurassic Park</strong> — The kitchen scene, the "clever girl" moment, and the final battle in the visitor center.</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">1997</span>
+          <span class="film-desc"><strong>The Lost World</strong> — Tall grass attack, hunting the team on Isla Sorna.</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">2001</span>
+          <span class="film-desc"><strong>Jurassic Park III</strong> — Feathered quills, ambush in the laboratory ruins, and communication with the main pack.</span>
+        </div>
+      </article>
+    </div>
+
+    
+    <div class="raptor-accordion">
+
+      
+      <div class="raptor-accordion-item">
+        <input type="checkbox" id="raptor-facts" class="raptor-accordion-toggle">
+        <label for="raptor-facts" class="raptor-accordion-header">
+          <i class="fas fa-microphone-alt"></i> Behind the Sound
+          <span class="raptor-accordion-icon">▼</span>
+        </label>
+        <div class="raptor-accordion-content">
+          <ul>
+            <li><strong>Vocalizations:</strong> The raptor sounds were created from a mix of horse screams, dolphin squeaks, and bird calls.</li>
+            <li><strong>Communication:</strong> The clicking and chattering sounds were inspired by birds and reptiles.</li>
+            <li><strong>Breathing:</strong> Heavy breathing was added to create tension during the kitchen scene.</li>
+            <li><strong>The Raptor Call:</strong> The iconic "raptor call" sound was designed to feel like a warning between pack members.</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="raptor-accordion-item">
+        <input type="checkbox" id="raptor-funfacts" class="raptor-accordion-toggle">
+        <label for="raptor-funfacts" class="raptor-accordion-header">
+          <i class="fas fa-lightbulb"></i> Fun Facts
+          <span class="raptor-accordion-icon">▼</span>
+        </label>
+        <div class="raptor-accordion-content">
+          <ul>
+            <li>The film raptors are based on <strong>Deinonychus</strong>, not actual Velociraptors. Real ones were turkey-sized.</li>
+            <li>In Jurassic Park III, raptors were given feather-like quills, reflecting newer scientific discoveries.</li>
+            <li>The kitchen scene was inspired by a nightmare the screenwriter had.</li>
+            <li>"Clever girl" is one of the most quoted lines in cinema history.</li>
+            <li>The raptors in the film are roughly 6 feet tall — much larger than their real-life counterparts.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="back-button">
+      <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3> Jurassic Park Trilogy Archive</h3>
+      <p>Preserving the legacy of the original Jurassic Park trilogy. For fans, by fans.</p>
+      <p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="trex.html">Tyrannosaurus Rex</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Connect</h3>
+      <i class="fas fa-globe"></i> <a href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/" target="_blank">UTM Website</a>
+      
+      <p><i class="fas fa-envelope"></i> <a href="mailto:jurassicparkarchive@gmail.com">jurassicparkarchive@gmail.com</a></p>
+      <div class="social-icons">
+        <a href="https://x.com/jurassic_Park_a" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://m.facebook.com/profile.php?id=61591507573275" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/jurassic_park_archive/" target="_blank"><i class="fab fa-instagram"></i></a>
+      
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Jurassic Park Trilogy Archive | <a href="#top">Back to top <i class="fas fa-arrow-up"></i></a></p>
+    <p>Visit <a href="https://www.jurassicworld.com" target="_blank">Official Jurassic World <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

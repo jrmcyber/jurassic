@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Spinosaurus – the giant river predator of Jurassic Park III. Stats, roar, film appearances and terror.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Spinosaurus, Spino, Jurassic Park III, Apex Predator, Semi-Aquatic, T-Rex Killer">
+  <title>Jurassic Park Archive | Spinosaurus</title>
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/logo.png">
+  <link rel="shortcut icon" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0c54b7787d.js"></script>
+
+  <link rel="stylesheet" href="css/site.css">
+
+  <style>
+ 
+
+    .spino-page main {
+      padding: 0;
+      max-width: 100%;
+    }
+
+   
+    .spino-hero {
+      position: relative;
+      min-height: 90vh;
+      background: url('images/spinohero.jpg') no-repeat center center / cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+   
+    .spino-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      
+    }
+
+    .spino-hero > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .spino-hero h1 {
+      font-family: 'Tangerine', cursive;
+      margin-top: 60px;
+      font-size: 8rem;
+      color: #f5a623;
+      text-shadow: 0 0 40px rgba(245, 166, 35, 0.4), 0 4px 20px rgba(0, 0, 0, 0.9);
+      margin-bottom: 0.2rem;
+      letter-spacing: 4px;
+    }
+
+    .spino-hero .sub {
+      font-size: 1.6rem;
+      color: #ab974d;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    
+    .spino-hero-audio {
+      margin-top: 1.5rem;
+    }
+
+    .spino-hero-audio audio {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      border-radius: 30px;
+      padding: 6px 18px;
+      width: 280px;
+      max-width: 80%;
+      border: 1px solid rgba(245, 166, 35, 0.2);
+    }
+
+    .spino-hero-audio audio::-webkit-media-controls-panel {
+      background: transparent;
+    }
+
+    
+    .spino-content {
+      background: #0a0a0a;
+      padding: 60px 30px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    
+    .spino-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+  
+    .spino-card {
+      background: #1a1a1a;
+      border: 1px solid rgba(245, 166, 35, 0.15);
+      border-radius: 12px;
+      padding: 28px 24px;
+      transition: all 0.3s ease;
+    }
+
+    .spino-card:hover {
+      border-color: #f5a623;
+      transform: translateY(-4px);
+      box-shadow: 0 0 25px rgba(245, 166, 35, 0.2);
+    }
+
+    .spino-card h2 {
+      font-family: 'Tangerine', cursive;
+      font-size: 2.2rem;
+      color: #f5a623;
+      border-bottom: none;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .spino-card h2 i {
+      font-size: 1.6rem;
+      opacity: 0.7;
+    }
+
+    .spino-card p,
+    .spino-card li {
+      color: #d0c8b8;
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    .spino-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .spino-card ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(245, 166, 35, 0.06);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .spino-card ul li:last-child {
+      border-bottom: none;
+    }
+
+    .spino-card ul li i {
+      color: #f5a623;
+      width: 22px;
+      margin-top: 3px;
+      font-size: 0.9rem;
+    }
+
+    
+    .stats-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .stats-table tr {
+      border-bottom: 1px solid rgba(245, 166, 35, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .stats-table tr:hover {
+      background: rgba(245, 166, 35, 0.08);
+      box-shadow: 0 0 15px rgba(245, 166, 35, 0.15), inset 0 0 15px rgba(245, 166, 35, 0.05);
+      transform: scale(1.01);
+    }
+
+    .stats-table td {
+      padding: 12px 8px;
+    }
+
+    .stats-table .label {
+      color: #ab974d;
+      font-weight: 600;
+    }
+
+    .stats-table .value {
+      color: #f5a623;
+      text-align: right;
+    }
+
+   
+    .film-item {
+      display: flex;
+      gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(245, 166, 35, 0.06);
+    }
+
+    .film-item:last-child {
+      border-bottom: none;
+    }
+
+    .film-year {
+      font-weight: 700;
+      color: #f5a623;
+      min-width: 48px;
+      font-size: 0.95rem;
+    }
+
+    .film-desc {
+      color: #d0c8b8;
+      font-size: 0.95rem;
+    }
+
+   
+    .spino-accordion {
+      margin-top: 10px;
+    }
+
+    .spino-accordion-item {
+      margin-bottom: 12px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(245, 166, 35, 0.08);
+      transition: border-color 0.3s ease;
+    }
+
+    .spino-accordion-item:hover {
+      border-color: rgba(245, 166, 35, 0.2);
+    }
+
+    .spino-accordion-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 22px;
+      background: #1a1a1a;
+      cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #f5a623;
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+
+    .spino-accordion-header:hover {
+      background: #222;
+    }
+
+    .spino-accordion-header i {
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+
+    .spino-accordion-icon {
+      margin-left: auto;
+      transition: transform 0.3s ease;
+      font-size: 0.8rem;
+      color: #ab974d;
+    }
+
+    .spino-accordion-toggle {
+      display: none;
+    }
+
+    .spino-accordion-content {
+      display: none;
+      padding: 20px 22px;
+      background: #0d0d0d;
+      color: #c0b8a8;
+      line-height: 1.8;
+      border-top: 1px solid rgba(245, 166, 35, 0.06);
+    }
+
+    .spino-accordion-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .spino-accordion-content ul li {
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(245, 166, 35, 0.04);
+    }
+
+    .spino-accordion-content ul li:last-child {
+      border-bottom: none;
+    }
+
+    .spino-accordion-content ul li strong {
+      color: #f5a623;
+    }
+
+    .spino-accordion-toggle:checked ~ .spino-accordion-content {
+      display: block;
+    }
+
+    .spino-accordion-toggle:checked ~ .spino-accordion-header .spino-accordion-icon {
+      transform: rotate(180deg);
+    }
+
+   
+    .back-button {
+      text-align: center;
+      margin: 40px 0 20px 0;
+    }
+
+
+    @media (max-width: 992px) {
+      .spino-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .spino-hero {
+        min-height: 80vh;
+        padding: 30px 16px;
+      }
+
+      .spino-hero h1 {
+        font-size: 3.8rem;
+      }
+
+      .spino-hero .sub {
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+      }
+
+      .spino-content {
+        padding: 40px 16px;
+      }
+
+      .spino-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .spino-accordion-header {
+        font-size: 0.9rem;
+        padding: 14px 16px;
+      }
+
+      .spino-accordion-content {
+        padding: 16px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .spino-hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .spino-hero .sub {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+      }
+
+      .spino-card {
+        padding: 20px 16px;
+      }
+
+      .film-item {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .stats-table {
+        font-size: 0.8rem;
+      }
+
+      .stats-table td {
+        padding: 8px 4px;
+      }
+
+      .spino-accordion-header {
+        font-size: 0.8rem;
+        padding: 12px 14px;
+      }
+
+      .spino-accordion-content {
+        padding: 12px 14px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="spino-page">
+
+<header>
+  <div class="banner">
+    <img src="images/new-banner.jpg" alt="Jurassic Park Banner" class="banner-desktop">
+    <img src="images/mobile-banner.jpg" alt="Jurassic Park Banner" class="banner-mobile">
+
+    <div class="hamburger-icon" onclick="toggleHamburger()">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="banner-nav">
+      <ul>
+        <li class="dropdown">
+          <input type="checkbox" id="films-dropdown" class="dropdown-toggle">
+          <label for="films-dropdown" class="dropbtn">Films</label>
+          <div class="dropdown-content">
+            <a href="jp1.html">Jurassic Park</a>
+            <a href="jp2.html">The Lost World</a>
+            <a href="jp3.html">Jurassic Park III</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="apex-dropdown" class="dropdown-toggle">
+          <label for="apex-dropdown" class="dropbtn">Apex Predators</label>
+          <div class="dropdown-content">
+            <a href="trex.html">Tyrannosaurus Rex</a>
+            <a href="raptors.html">Velociraptors</a>
+            <a href="spino.html">Spinosaurus</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="vault-dropdown" class="dropdown-toggle">
+          <label for="vault-dropdown" class="dropbtn">The Vault</label>
+          <div class="dropdown-content">
+            <a href="encyclopedia.html">Dino Encyclopedia</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="contact-dropdown" class="dropdown-toggle">
+          <label for="contact-dropdown" class="dropbtn">Contact</label>
+          <div class="dropdown-content">
+            <a href="contact.html">Contact Form</a>
+            <a href="#contact">Social Media</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="banner-overlay">
+      <div class="logo-container">
+        <h1>Jurassic Park Archive</h1>
+      </div>
+      <a href="index.html" class="amber-logo-link" title="Go to Home">
+        <img src="images/amberlogo.png" alt="Amber Logo - Home" class="amberlogo">
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+
+  
+  <section class="spino-hero">
+    <div>
+      <h1>Spinosaurus</h1>
+      <p class="sub">Apex Predator</p>
+
+      
+      <div class="spino-hero-audio">
+        <audio controls>
+          <source src="audio/spino-roar.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="spino-content">
+
+    
+    <div class="spino-grid">
+
+      
+      <article class="spino-card">
+        <h2><i class="fas fa-file-alt"></i> Field Report</h2>
+        <p>The Spinosaurus is the largest carnivorous dinosaur to appear in the Jurassic Park franchise. Its most infamous moment came in <strong>Jurassic Park III</strong>, when it killed a fully grown T-Rex in a brutal fight — a decision that divided fans worldwide.</p>
+        <p>Spinosaurus was semi-aquatic, spending much of its time in water hunting fish. Its massive sail made it unique among theropods, and its size made it a true apex predator.</p>
+        <p style="margin-top: 12px;">
+          <span style="display:inline-block; background:rgba(245,166,35,0.1); border:1px solid rgba(245,166,35,0.25); border-radius:20px; padding:4px 14px; font-size:0.7rem; color:#f5a623; margin-right:6px;">Semi-Aquatic</span>
+          <span style="display:inline-block; background:rgba(245,166,35,0.1); border:1px solid rgba(245,166,35,0.25); border-radius:20px; padding:4px 14px; font-size:0.7rem; color:#f5a623;">1 Film Appearance</span>
+        </p>
+      </article>
+
+      
+      <article class="spino-card">
+        <h2><i class="fas fa-chart-line"></i> Vital Statistics</h2>
+        <table class="stats-table">
+          <tbody>
+            <tr><td class="label">Length</td><td class="value">50 ft (15.2 m)</td></tr>
+            <tr><td class="label">Height</td><td class="value">20 ft (6 m) at sail</td></tr>
+            <tr><td class="label">Weight</td><td class="value">12–20 tons</td></tr>
+            <tr><td class="label">Bite Force</td><td class="value">4,000 PSI</td></tr>
+            <tr><td class="label">Top Speed</td><td class="value">15 mph (in water)</td></tr>
+            <tr><td class="label">Lifespan</td><td class="value">20–25 years</td></tr>
+            <tr><td class="label">Diet</td><td class="value">Piscivore / Carnivore</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      
+      <article class="spino-card">
+        <h2><i class="fas fa-film"></i> Appearances</h2>
+        <div class="film-item">
+          <span class="film-year">2001</span>
+          <span class="film-desc"><strong>Jurassic Park III</strong> — The main antagonist. Kills a T-Rex, attacks the plane, and pursues the survivors throughout Isla Sorna.</span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">—</span>
+          <span class="film-desc"><em>No other film appearances in the original trilogy.</em></span>
+        </div>
+        <div class="film-item">
+          <span class="film-year">—</span>
+          <span class="film-desc"><em>Later appeared in Jurassic World: Camp Cretaceous and Jurassic World: Dominion.</em></span>
+        </div>
+      </article>
+    </div>
+
+    
+    <div class="spino-accordion">
+
+      
+      <div class="spino-accordion-item">
+        <input type="checkbox" id="spino-facts" class="spino-accordion-toggle">
+        <label for="spino-facts" class="spino-accordion-header">
+          <i class="fas fa-microphone-alt"></i> Behind the Roar
+          <span class="spino-accordion-icon">▼</span>
+        </label>
+        <div class="spino-accordion-content">
+          <ul>
+            <li><strong>Sound Design:</strong> The Spinosaurus roar was created from a mix of bear, lion, and bird sounds to make it feel unique and terrifying.</li>
+            <li><strong>Distinctive Call:</strong> Its call was designed to be deeper and more guttural than the T-Rex, emphasizing its size.</li>
+            <li><strong>Water Sounds:</strong> Splashing and water movements were added to reflect its semi-aquatic nature.</li>
+            <li><strong>Silence:</strong> The Spinosaurus is often silent before attacking — making its roar even more shocking.</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="spino-accordion-item">
+        <input type="checkbox" id="spino-funfacts" class="spino-accordion-toggle">
+        <label for="spino-funfacts" class="spino-accordion-header">
+          <i class="fas fa-lightbulb"></i> Fun Facts
+          <span class="spino-accordion-icon">▼</span>
+        </label>
+        <div class="spino-accordion-content">
+          <ul>
+            <li>Spinosaurus is the <strong>largest carnivorous dinosaur</strong> to appear in the Jurassic Park films.</li>
+            <li>Its fight with the T-Rex in JP3 is one of the most controversial scenes in the franchise.</li>
+            <li>Real Spinosaurus was semi-aquatic — the film was ahead of its time in portraying this.</li>
+            <li>The sail was used for display, thermoregulation, and possibly swimming.</li>
+            <li>The Spinosaurus was created with a mix of CGI and animatronics.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="back-button">
+      <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3> Jurassic Park Trilogy Archive</h3>
+      <p>Preserving the legacy of the original Jurassic Park trilogy. For fans, by fans.</p>
+      <p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="films.html">Films</a></li>
+        <li><a href="trex.html">Tyrannosaurus Rex</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Connect</h3>
+      <i class="fas fa-globe"></i> <a href="https://www.utm.ac.mu/courses/bsc-hons-cyber-security/" target="_blank">UTM Website</a>
+      
+      <p><i class="fas fa-envelope"></i> <a href="mailto:jurassicparkarchive@gmail.com">jurassicparkarchive@gmail.com</a></p>
+      <div class="social-icons">
+        <a href="https://x.com/jurassic_Park_a" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://m.facebook.com/profile.php?id=61591507573275" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/jurassic_park_archive/" target="_blank"><i class="fab fa-instagram"></i></a>
+      
+      </div>
+      
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Jurassic Park Trilogy Archive | <a href="#top">Back to top <i class="fas fa-arrow-up"></i></a></p>
+    <p>Visit <a href="https://www.jurassicworld.com" target="_blank">Official Jurassic World <i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
